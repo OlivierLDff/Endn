@@ -90,7 +90,8 @@ inline std::uint32_t GET_UINT32(const std::uint8_t* buf)
     }
 #    endif
 #endif
-    return (static_cast<std::uint32_t>(buf[3]) << 24) | (static_cast<std::uint32_t>(buf[2]) << 16) | (static_cast<std::uint32_t>(buf[1]) << 8) | (static_cast<std::uint32_t>(buf[0]));
+    return (static_cast<std::uint32_t>(buf[3]) << 24) | (static_cast<std::uint32_t>(buf[2]) << 16)
+           | (static_cast<std::uint32_t>(buf[1]) << 8) | (static_cast<std::uint32_t>(buf[0]));
 }
 
 /**
@@ -118,7 +119,8 @@ inline std::uint64_t GET_UINT48(const std::uint8_t* buf)
     }
 #    endif
 #endif
-    return (static_cast<std::uint64_t>(buf[5]) << 40) | (static_cast<std::uint64_t>(buf[4]) << 32) | (static_cast<std::uint64_t>(buf[3]) << 24) | (static_cast<std::uint64_t>(buf[2]) << 16)
+    return (static_cast<std::uint64_t>(buf[5]) << 40) | (static_cast<std::uint64_t>(buf[4]) << 32)
+           | (static_cast<std::uint64_t>(buf[3]) << 24) | (static_cast<std::uint64_t>(buf[2]) << 16)
            | (static_cast<std::uint64_t>(buf[1]) << 8) | (static_cast<std::uint64_t>(buf[0]));
 }
 
@@ -146,8 +148,10 @@ inline std::uint64_t GET_UINT64(const std::uint8_t* buf)
     }
 #    endif
 #endif
-    return (static_cast<std::uint64_t>(buf[7]) << 56) | (static_cast<std::uint64_t>(buf[6]) << 48) | (static_cast<std::uint64_t>(buf[5]) << 40) | (static_cast<std::uint64_t>(buf[4]) << 32)
-           | (static_cast<std::uint64_t>(buf[3]) << 24) | (static_cast<std::uint64_t>(buf[2]) << 16) | (static_cast<std::uint64_t>(buf[1]) << 8) | (static_cast<std::uint64_t>(buf[0]));
+    return (static_cast<std::uint64_t>(buf[7]) << 56) | (static_cast<std::uint64_t>(buf[6]) << 48)
+           | (static_cast<std::uint64_t>(buf[5]) << 40) | (static_cast<std::uint64_t>(buf[4]) << 32)
+           | (static_cast<std::uint64_t>(buf[3]) << 24) | (static_cast<std::uint64_t>(buf[2]) << 16)
+           | (static_cast<std::uint64_t>(buf[1]) << 8) | (static_cast<std::uint64_t>(buf[0]));
 }
 
 /**
